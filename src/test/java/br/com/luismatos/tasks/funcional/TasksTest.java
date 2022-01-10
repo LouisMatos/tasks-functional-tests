@@ -13,7 +13,8 @@ public class TasksTest {
 	
 
 	public WebDriver acessarAplicacao() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://172.28.0.1:8001/tasks");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
